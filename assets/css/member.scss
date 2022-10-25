@@ -1,0 +1,526 @@
+/* ===============================================
+#ヘッダー
+=============================================== */
+.main-header {
+    &.member_header {
+        position: relative;
+        overflow: hidden;
+        height: 315px;
+        
+        @media screen and (max-width: 1023px) {
+            height: 222px;
+        }
+        
+        @media screen and (max-width: 767px) {
+            height: 156px;
+            
+        }
+        
+        &::before {
+            content: "";
+            position: absolute;
+            top: 2px;
+            left: -22px;
+            background: transparent url(./../images/member/header-text.png)
+                no-repeat top center / cover;
+            width: 2193px;
+            height: 407px;
+            
+            @media screen and (max-width: 1023px) {
+                width: 1523px;
+                height: 277px;
+            }
+            
+            @media screen and (max-width: 767px) {
+                width: 1013px;
+                height: 144px;
+            }
+        }
+
+        .logo {
+            width: 320px;
+            margin-left: auto;
+            margin-right: auto;
+            
+            @media screen and (max-width: 1023px) {
+                width: 200px;
+            }
+            
+            @media screen and (max-width: 767px) {
+                width: 120px;
+            
+            }
+        }
+        .nav_menu {
+            position: fixed;
+        }
+    }
+}
+/* ===============================================
+#メンバーメインエリア
+=============================================== */
+.memberMain {
+    position: relative;
+    margin-top: -19px;
+    .section_heading {
+        .over_heading {
+            .en {
+                font-size: 107px;
+                letter-spacing: 0.06em;
+                line-height: 1;
+                
+                @media screen and (max-width: 1560px) {
+                    font-size: 68px;
+                }
+                
+                @media screen and (max-width: 1023px) {
+                    font-size: 48px;
+                }
+                
+                @media screen and (max-width: 767px) {
+                    font-size: 40px;
+                }
+            }
+        }
+        
+        p {
+            font-size: 25px;
+            
+            @media screen and (max-width: 1023px) {
+                font-size: 20px;
+            }
+            
+            @media screen and (max-width: 767px) {
+                font-size: 16px;
+            }
+            
+            span {
+                color: #A0B084;
+                letter-spacing: .35em;
+                margin: 0 37px 0 44px;
+            }
+        }
+    }
+    &__inner {
+        max-width: 1680px;
+        margin: 0 auto;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    
+    &__container {
+        margin-top: 92px;
+        margin-bottom: 154px;
+        padding-bottom: 90px;
+        border-bottom: 6px solid #000;
+        
+        @media screen and (max-width: 767px) {
+            margin-top: 80px;
+            margin-bottom: 80px;
+            padding-bottom: 40px;
+            border-bottom: 4px solid #000;
+            
+        }
+    }
+    
+    &__wrapper {
+        
+        &:nth-of-type(n + 2) {
+            margin-top: 152px;
+            
+            @media screen and (max-width: 767px) {
+                margin-top: 80px;
+                
+            }
+        }
+    }
+
+    &__heading {
+        display: flex;
+        align-items: center;
+        font-size: 40px;
+        margin-bottom: 63px;
+        letter-spacing: .13em;
+        
+        @media screen and (max-width: 1023px) {
+            font-size: 32px;
+        }
+        @media screen and (max-width: 767px) {
+            font-size: 24px;
+            margin-bottom: 40px;
+        }
+
+        &::before,
+        &::after {
+            content: "";
+            height: 6px;
+            flex-grow: 1;
+            background-color: #000000;
+            
+            @media screen and (max-width: 767px) {
+                height: 4px;
+            
+            }
+        }
+
+        &::before {
+            margin-right: 55px;
+            
+            @media screen and (max-width: 767px) {
+                margin-right: 20px;
+                
+            }
+        }
+        
+        &::after {
+            margin-left: 55px;
+            @media screen and (max-width: 767px) {
+                margin-left: 20px;
+                
+            }
+        }
+    }
+
+    &__lists {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    &__list {
+        @media screen and (min-width: 1501px) {
+            width: calc(100% / 7 - 57px * 6 / 7);
+    
+            &:not(:nth-of-type(7n + 1)) {
+                margin-left: 57px;
+            }
+    
+            &:nth-of-type(n + 8) {
+                margin-top: 43px;
+            }
+        }
+        
+        @media screen and (max-width: 1500px) {
+            @media screen and (min-width: 1201px) {
+                width: calc(100% / 7 - 30px * 6 / 7);
+        
+                &:not(:nth-of-type(7n + 1)) {
+                    margin-left: 30px;
+                }
+        
+                &:nth-of-type(n + 8) {
+                    margin-top: 43px;
+                }
+            }
+        }
+        
+        // @media screen and (max-width: 1500px) {
+        //     @media screen and (min-width: 1201px) {
+        //         width: calc(100% / 5 - 57px * 4 / 5);
+        
+        //         &:not(:nth-of-type(5n + 1)) {
+        //             margin-left: 57px;
+        //         }
+        
+        //         &:nth-of-type(n + 6) {
+        //             margin-top: 43px;
+        //         }
+        //     }
+        // }
+        
+        @media screen and (max-width: 1200px) {
+            @media screen and (min-width: 768px) {
+                width: calc(100% / 3 - 57px * 2 / 3);
+        
+                &:not(:nth-of-type(3n + 1)) {
+                    margin-left: 57px;
+                }
+        
+                &:nth-of-type(n + 4) {
+                    margin-top: 43px;
+                }
+            }
+        }
+        @media screen and (max-width: 767px) {
+            width: calc(100% / 2 - 20px * 1 / 2);
+    
+            &:not(:nth-of-type(2n + 1)) {
+                margin-left: 20px;
+            }
+    
+            &:nth-of-type(n + 3) {
+                margin-top: 20px;
+            }
+            
+        }
+    }
+
+    &__img {
+        position: relative;
+        
+        img {
+            display: block;
+            border-radius: 50%;
+            border: 2px solid;
+        }
+    }
+
+    &__option {
+        position: absolute;
+        bottom: -3px;
+        right: -8px;
+        z-index: 1;
+        width: 80px;
+        
+        @media screen and (max-width: 767px) {
+            width: 68px;
+            
+        }
+
+        svg {
+            width: 100%;
+            height: auto;
+        }
+
+        p {
+            position: absolute;
+            top: 47%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 12px;
+            text-align: center;
+            line-height: 12px;
+            
+            @media screen and (max-width: 767px) {
+                font-size: 10px;
+            
+            }
+        }
+    }
+    
+    &__name {
+        text-align: center;
+        margin-top: 22px;
+        font-family: copperplate, serif;
+        white-space: nowrap;
+        letter-spacing: .17em;
+        font-size: min(1.8vw, 28px);
+        
+        @media screen and (max-width: 1200px) {
+            font-size: 28px;
+        }
+        
+        
+        @media screen and (max-width: 767px) {
+            margin-top: 10px;
+            font-size: 20px;
+        }
+    }
+    
+    &__genius {
+        text-align: center;
+        margin-top: 1px;
+        position: relative;
+        height: 23px;
+        @media screen and (min-width: 1201px) {
+            font-size: min(1.4vw,15px);
+        }
+        @media screen and (max-width: 1200px) {
+            font-size: 15px;
+        }
+        
+        @media screen and (max-width: 767px) {
+            font-size: 14px;
+        }
+        span {
+            display: inline-block;
+            text-align: left;
+            letter-spacing: .1em;
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            white-space: nowrap;
+            &::before {
+                content: "# ";
+                font-family: copperplate, serif;
+                
+                @media screen and (min-width: 1201px) {
+                    font-size: min(1.3vw,20px);
+                }
+                
+                @media screen and (max-width: 1200px) {
+                    font-size: 20px;
+                }
+                
+                @media screen and (max-width: 767px) {
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}
+/* ===============================================
+#RECRUITセクション
+=============================================== */
+.memberRecruit {
+    margin-bottom: 168px;
+    
+    @media screen and (max-width: 767px) {
+        margin-bottom: 80px;
+    }
+    .section_heading {
+        .over_heading {
+            .en {
+                font-size: 85px;
+                
+                @media screen and (max-width: 1023px) {
+                    font-size: 46px;
+                }
+            }
+        }
+        
+        p {
+            font-size: 25px;
+            
+            @media screen and (max-width: 1023px) {
+                font-size: 16px;
+            }
+            span {
+                color: #A0B084;
+                letter-spacing: .35em;
+            }
+        }
+    }
+    
+    &__inner {
+        max-width: 1590px;
+    }
+    
+    &__container {
+        @media screen and (min-width: 768px) {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+    }
+    
+    &__textarea {
+        width: 426px;
+        
+        @media screen and (max-width: 1023px) {
+            width: 260px;
+        }
+        
+        @media screen and (max-width: 767px) {
+            width: 100%;
+            margin-bottom: 40px;
+        }
+    }
+    
+    &__linkarea {
+        width: calc(100% - 503px);
+        @media screen and (max-width: 1023px) {
+            width: calc(100% - 290px);
+            
+        }
+        
+        @media screen and (max-width: 767px) {
+            width: 100%;
+        }
+    }
+    
+    &__lead {
+        text-align: center;
+        font-size: 40px;
+        letter-spacing: .02em;
+        
+        &::after {
+            content: "→";
+            
+            @media screen and (max-width: 767px) {
+                content: "↓";
+            
+            }
+        }
+        
+        @media screen and (max-width: 1023px) {
+            font-size: 24px;
+        
+        }
+    }
+    
+    &__img {
+        display: block;
+    }
+}
+/* ===============================================
+#GUILDセクション
+=============================================== */
+.memberGuild {
+    margin-bottom: 194px;
+    
+    @media screen and (max-width: 767px) {
+        margin-bottom: 80px;
+    }
+    .section_heading {
+        .over_heading {
+            .en {
+                font-size: 85px;
+                
+                @media screen and (max-width: 1023px) {
+                    font-size: 46px;
+                }
+            }
+        }
+        
+        p {
+            font-size: 25px;
+            
+            @media screen and (max-width: 1023px) {
+                font-size: 16px;
+            }
+            span {
+                color: #A0B084;
+                letter-spacing: .35em;
+                margin: 0 40px;
+                
+            }
+        }
+    }
+    &__container {
+        border-bottom: 6px solid #000;
+        margin-top: 72px;
+        
+        @media screen and (max-width: 767px) {
+            border-bottom: 4px solid #000;
+            margin-top: 40px;
+            
+        }
+    }
+    
+    &__img {
+        width: 91%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: -2px;
+        
+        @media screen and (max-width: 767px) {
+            width: 97%;
+            margin-bottom: -1px;
+            
+        }
+    }
+}
+
+/* ===============================================
+#改行用
+=============================================== */
+.u-sp {
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
+    
+    @media screen and (max-width: 767px) {
+        display: block;
+    }
+}

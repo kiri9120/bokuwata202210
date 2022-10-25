@@ -1,0 +1,643 @@
+/* ===============================================
+#ヘッダー
+=============================================== */
+.main-header {
+    &.recruit_header.underlayer_header {
+        background-color: #eae5df;
+        position: relative;
+        overflow: hidden;
+        height: 200px;
+
+        @media screen and (max-width: 1023px) {
+            height: 180px;
+        }
+
+        @media screen and (max-width: 767px) {
+            height: 108px;
+            background-color: transparent;
+            overflow: inherit;
+        }
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: -9px;
+            left: 98px;
+            background: transparent url(./../images/recruit/header-text.png)
+                no-repeat top center / cover;
+            width: 1333px;
+            height: 100%;
+
+            @media screen and (max-width: 1023px) {
+                left: 0px;
+                background-position: left;
+            }
+
+            @media screen and (max-width: 767px) {
+                display: none;
+            }
+        }
+
+        .logo {
+            width: 220px;
+            margin-left: auto;
+            margin-right: auto;
+
+            @media screen and (max-width: 1023px) {
+                width: 200px;
+                margin-left: 0;
+            }
+
+            @media screen and (max-width: 767px) {
+                width: 120px;
+                margin-left: 0;
+            }
+        }
+        .nav_menu {
+            position: fixed;
+        }
+    }
+}
+/* ===============================================
+#共通
+=============================================== */
+.recruit {
+    &__inner {
+        max-width: 1650px;
+        margin: 0 auto;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+/* ===============================================
+#上部セクション
+=============================================== */
+.recruitUpper {
+    background: #eae5df url(./../images/recruit/upper-bg.jpg) no-repeat bottom
+        center / 122%;
+    padding-bottom: 300px;
+
+    @media screen and (max-width: 1023px) {
+        padding-bottom: 200px;
+    }
+
+    @media screen and (max-width: 767px) {
+        padding-top: 100px;
+        padding-bottom: 160px;
+        background: #eae5df url(./../images/recruit/upper-bg.jpg) no-repeat
+            bottom center / 1040px;
+        overflow: hidden;
+        position: relative;
+        &::before {
+            content: "";
+            position: absolute;
+            left: 0px;
+            background: transparent url(./../images/recruit/header-text.png)
+                no-repeat top center / cover;
+            width: 423px;
+            height: 85px;
+            top: 0px;
+        }
+    }
+
+    .section_heading {
+        .over_heading {
+            .en {
+                font-size: 107px;
+                letter-spacing: 0.06em;
+                line-height: 1;
+
+                @media screen and (max-width: 1560px) {
+                    font-size: 68px;
+                }
+
+                @media screen and (max-width: 1023px) {
+                    font-size: 48px;
+                }
+
+                @media screen and (max-width: 767px) {
+                    font-size: 40px;
+                }
+            }
+        }
+
+        p {
+            font-size: 25px;
+
+            @media screen and (max-width: 1023px) {
+                font-size: 20px;
+            }
+
+            @media screen and (max-width: 767px) {
+                font-size: 16px;
+            }
+
+            span {
+                color: #a0b084;
+                letter-spacing: 0.35em;
+                margin: 0 37px 0 44px;
+            }
+        }
+    }
+
+    &__container {
+        max-width: 907px;
+        margin: 35px auto 0;
+
+        @media screen and (min-width: 768px) {
+            margin: 55px auto 0;
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+
+    &__wrapper {
+        text-align: center;
+        padding-left: 57px;
+        @media screen and (max-width: 1023px) {
+            padding-left: 0;
+        }
+
+        @media screen and (max-width: 767px) {
+            margin-bottom: 25px;
+        }
+    }
+
+    &__en {
+        color: #493c2b;
+        background-color: #fff;
+        margin-bottom: 22px;
+        font-size: 40px;
+        display: inline-block;
+        padding: 0 1px 4px 6px;
+        line-height: 0.8;
+        letter-spacing: 0.11em;
+
+        @media screen and (max-width: 767px) {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+    }
+
+    &__jp {
+        font-size: 39px;
+        color: #493c2b;
+        letter-spacing: 0.11em;
+        line-height: 1.4;
+
+        @media screen and (max-width: 767px) {
+            font-size: 22px;
+        }
+    }
+}
+/* ===============================================
+#数字でみる僕わたセクション
+=============================================== */
+.recruitFigure {
+    padding-top: 197px;
+    padding-bottom: 288px;
+
+    @media screen and (max-width: 1023px) {
+        padding-top: 150px;
+        padding-bottom: 200px;
+    }
+
+    @media screen and (max-width: 767px) {
+        padding-top: 80px;
+        padding-bottom: 100px;
+    }
+
+    &__container {
+        border-bottom: 6px solid #000;
+        padding-bottom: 89px;
+
+        @media screen and (max-width: 767px) {
+            border-bottom: 4px solid #000;
+            padding-bottom: 40px;
+        }
+    }
+
+    &__heading {
+        display: flex;
+        align-items: center;
+        font-size: 55px;
+        margin-bottom: 63px;
+        letter-spacing: 0.13em;
+
+        @media screen and (max-width: 1023px) {
+            font-size: 32px;
+        }
+        @media screen and (max-width: 767px) {
+            font-size: 24px;
+            margin-bottom: 40px;
+        }
+
+        &::before,
+        &::after {
+            content: "";
+            height: 6px;
+            flex-grow: 1;
+            background-color: #000000;
+
+            @media screen and (max-width: 767px) {
+                height: 4px;
+            }
+        }
+
+        &::before {
+            margin-right: 55px;
+
+            @media screen and (max-width: 767px) {
+                margin-right: 20px;
+            }
+        }
+
+        &::after {
+            margin-left: 55px;
+            @media screen and (max-width: 767px) {
+                margin-left: 20px;
+            }
+        }
+    }
+
+    &__grid {
+        @media screen and (min-width: 768px) {
+            display: grid;
+            grid-gap: 2.2%;
+        }
+    }
+
+    &__img {
+        overflow: hidden;
+        position: relative;
+        border-radius: 22px;
+        img {
+            object-fit: cover;
+        }
+        @media screen and (min-width: 768px) {
+            &--01 {
+                grid-row: 1 / 3;
+                grid-column: 1 / 2;
+            }
+            &--02 {
+                grid-row: 1 / 2;
+                grid-column: 2 / 3;
+            }
+            &--03 {
+                grid-row: 2 / 3;
+                grid-column: 2 / 3;
+            }
+            &--04 {
+                grid-row: 3 / 4;
+                grid-column: 1 / 2;
+            }
+            &--05 {
+                grid-row: 3 / 4;
+                grid-column: 2 / 3;
+            }
+            &--06 {
+                grid-row: 4 / 5;
+                grid-column: 1 / 3;
+            }
+        }
+
+        @media screen and (max-width: 767px) {
+            border-radius: 6px;
+
+            &:nth-of-type(n + 2) {
+                margin-top: 20px;
+            }
+        }
+    }
+}
+/* ===============================================
+#WORK STYLEセクション
+=============================================== */
+.recruitWork {
+    background-color: #fff;
+    padding-bottom: 132px;
+
+    &__heading-img {
+        position: relative;
+        max-width: 1188px;
+        margin: 0px auto;
+        top: -39px;
+        left: -20px;
+        margin-bottom: 32px;
+
+        @media screen and (max-width: 1023px) {
+            left: 0px;
+        }
+
+        @media screen and (max-width: 767px) {
+            top: -15px;
+        }
+    }
+
+    &__container {
+        @media screen and (min-width: 768px) {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+    }
+
+    &__wrapper {
+        @media screen and (min-width: 1024px) {
+            width: calc(100% / 3 - 62px * 2 / 3);
+
+            &:nth-of-type(n + 2) {
+                margin-left: 62px;
+            }
+        }
+
+        @media screen and (max-width: 1023px) {
+            @media screen and (min-width: 768px) {
+                width: calc(100% / 2 - 62px * 1 / 2);
+
+                &:not(:nth-of-type(2n + 1)) {
+                    margin-left: 62px;
+                }
+
+                &:nth-of-type(n + 3) {
+                    margin-top: 100px;
+                }
+            }
+        }
+
+        @media screen and (max-width: 767px) {
+            &:nth-of-type(n + 2) {
+                margin-top: 80px;
+            }
+        }
+    }
+
+    &__wrapper-title {
+        font-size: 40px;
+        text-align: center;
+        position: relative;
+        margin-bottom: 32px;
+        letter-spacing: 0.12em;
+
+        @media screen and (max-width: 767px) {
+            font-size: 26px;
+        }
+
+        &::before {
+            content: "";
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            height: 6px;
+            width: 65px;
+            background-color: #e2d8c5;
+
+            @media screen and (max-width: 767px) {
+                height: 4px;
+            }
+        }
+    }
+
+    &__slider {
+        padding: 0;
+        margin: 0;
+    }
+}
+/* ===============================================
+#slick
+=============================================== */
+.recruitWork {
+    .slick-list {
+        border: 6px solid #000;
+        border-radius: 31px;
+
+        @media screen and (max-width: 767px) {
+            border: 4px solid #000;
+            border-radius: 15px;
+        }
+    }
+    .slide-arrow {
+        position: absolute;
+        bottom: -77px;
+        width: 51px;
+        height: 51px;
+        appearance: none;
+        border: none;
+        cursor: pointer;
+        z-index: 9;
+
+        @media screen and (max-width: 767px) {
+            bottom: -46px;
+            width: 31px;
+            height: 31px;
+        }
+    }
+
+    .prev-arrow {
+        left: 18px;
+        background: transparent url(./../images/slick-arrow-prev.png) no-repeat
+            top center / cover;
+    }
+
+    .next-arrow {
+        background: transparent url(./../images/slick-arrow-next.png) no-repeat
+            top center / cover;
+        right: 18px;
+    }
+
+    .slick-dots {
+        bottom: -60px;
+
+        @media screen and (max-width: 767px) {
+            bottom: -40px;
+        }
+        li {
+            width: 13px;
+            height: 13px;
+            button {
+                &::before {
+                    content: "";
+                    opacity: 1;
+                    width: 8px;
+                    height: 8px;
+                    border: 2px solid #000;
+                    background-color: #fff;
+                    border-radius: 50%;
+                }
+            }
+
+            &.slick-active {
+                button {
+                    &::before {
+                        opacity: 1;
+                        background-color: #000;
+                    }
+                }
+            }
+        }
+    }
+}
+/* ===============================================
+#選考フローセクション
+=============================================== */
+.recruitFlow {
+    padding-top: 143px;
+    padding-bottom: 250px;
+
+    @media screen and (max-width: 1023px) {
+        padding-top: 100px;
+        padding-bottom: 150px;
+    }
+
+    @media screen and (max-width: 767px) {
+        padding-top: 80px;
+        padding-bottom: 100px;
+    }
+
+    &__heading {
+        text-align: center;
+        margin-bottom: 42px;
+        span {
+            position: relative;
+            font-size: 55px;
+            letter-spacing: 0.13em;
+
+            @media screen and (max-width: 1023px) {
+                font-size: 44px;
+            }
+
+            @media screen and (max-width: 767px) {
+                font-size: 28px;
+            }
+
+            &::before,
+            &::after {
+                content: "";
+                position: absolute;
+                bottom: -33px;
+                width: 8px;
+                height: 61px;
+                background-color: #000;
+                border-radius: 8px;
+
+                @media screen and (max-width: 767px) {
+                    height: 40px;
+                    width: 6px;
+                    bottom: -23px;
+                }
+            }
+
+            &::before {
+                transform: rotate(-33deg);
+                left: -125px;
+
+                @media screen and (max-width: 767px) {
+                    left: -60px;
+                }
+            }
+            &::after {
+                transform: rotate(33deg);
+                right: -125px;
+                @media screen and (max-width: 767px) {
+                    right: -60px;
+                }
+            }
+        }
+    }
+
+    &__text {
+        font-size: 30px;
+        text-align: right;
+        margin-bottom: 15px;
+        font-weight: 500;
+        letter-spacing: 0.13em;
+        padding-right: 7px;
+
+        @media screen and (max-width: 1023px) {
+            font-size: 26px;
+        }
+
+        @media screen and (max-width: 767px) {
+            padding-right: 0px;
+            font-size: 18px;
+            margin-bottom: 5px;
+        }
+    }
+}
+/* ===============================================
+#ENTRYセクション
+=============================================== */
+.button_wrapper {
+    .form_send {
+        border-radius: 10px;
+        border: 6px solid #000;
+        background: #cec9be url(./../images/submit-icon.png) no-repeat top 15px
+            left 50px / 42px 42px;
+        width: 286px;
+        padding: 17px 31px 17px 0;
+        text-align: right;
+        font-size: 31px;
+        letter-spacing: 0.3em;
+        cursor: pointer;
+
+        @media screen and (max-width: 767px) {
+            background: #cec9be url(./../images/submit-icon.png) no-repeat top
+                13px left 29px / 27px 27px;
+            padding: 10px 31px 10px 0;
+            width: 220px;
+            font-size: 26px;
+            border: 4px solid #000;
+        }
+    }
+}
+.contact_header {
+    position: relative;
+    &::before {
+        content: "";
+        position: absolute;
+        right: 0;
+        bottom: -65px;
+        background: transparent url(./../images/form-object_no.png) no-repeat top center/cover;
+        width: 265px;
+        height: 119px;
+        background-size: contain;
+
+        @media screen and (max-width: 1023px) {
+            top: 115px;
+        }
+
+        @media screen and (max-width: 767px) {
+            width: 164px;
+            height: 66px;
+        }
+    }
+    &.submited {
+        &::before { 
+            background: transparent url(./../images/form-object.png) no-repeat top
+                center / cover;
+            background-size: contain;
+            top: -20px;
+            right: -30px;
+            width: 300px;
+            @media screen and (max-width: 1023px) {
+                top: 80px;
+                right: -18px;
+            }
+            @media screen and (max-width: 767px) {
+                width: 164px;
+                height: 66px;
+            }
+        }
+    }
+}
+.contact_sheet {
+    .section_heading {
+        @media screen and (max-width: 1023px) {
+            padding-bottom: 130px;
+        }
+        @media screen and (max-width: 767px) {
+            padding-bottom: 74px;
+        }
+    }
+}
