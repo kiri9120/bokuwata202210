@@ -108,12 +108,14 @@ $container = get_theme_mod('understrap_container_type');
                             <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/recruit/work-slide_4.png" alt="月1の1on1実施">
                         </picture>
                     </li>
+                    <!-- comments
                     <li class="recruitWork__slide-item">
                         <picture>
                             <source srcset="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/recruit/work-slide-sp_5.png" media="(max-width: 767px)" />
                             <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/recruit/work-slide_5.png" alt="表彰制度">
                         </picture>
                     </li>
+                    endcomments -->
                 </ul>
             </div>
             <div class="recruitWork__wrapper">
